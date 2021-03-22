@@ -2,8 +2,6 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 DEFAULT_USER="jjunCoder"
 
-alias devp='cd /Users/jjuncoder/DevProjects'
-
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/jjuncoder/.oh-my-zsh"
 
@@ -131,27 +129,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-# alias awslogin='ssh -i /Users/jjuncoder/DevProjects/AWS/snapdronekey.pem ubuntu@ec2-13-124-224-199.ap-northeast-2.compute.amazonaws.com'
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/jjuncoder/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/Users/jjuncoder/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/jjuncoder/anaconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-		conda deactivate
-    else
-        \export PATH="/Users/jjuncoder/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
 source /Users/jjuncoder/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PATH=$PATH:/Users/jjuncoder/Library/Android/sdk/platform-tools/
 
 alias logfilter='cd /Users/jjuncoder/dev/tools/filter && java -jar logfilter.jar'
-alias wificon='adb tcpip 5555 && adb connect 192.168.0.222'
-
